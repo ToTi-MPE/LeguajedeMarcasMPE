@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mercadona>
+    <producto id="1">
+        <nombre>tomate</nombre>
+        <descripcion>Fresca como tu madre</descripcion>
+        <precio>5.2</precio>
+        <categoria>top prime</categoria>
+        <disponibilidad>agotado</disponibilidad>
+        <imagen>https://media.justo.mx/products/Cereal_Kelloggs_Zucaritas_260g_1.jpg</imagen>
+    </producto>
+    <producto id="2">
+        <nombre>pan</nombre>
+        <descripcion>buen pan</descripcion>
+        <precio>1.35</precio>
+        <categoria>es pan bro</categoria>
+        <disponibilidad>agotado</disponibilidad>
+        <imagen>https://media.justo.mx/products/Cereal_Kelloggs_Zucaritas_260g_1.jpg</imagen>
+    </producto>
+    <producto id="3">
+        <nombre>donuts</nombre>
+        <descripcion>Buen donut</descripcion>
+        <precio>10.2</precio>
+        <categoria></categoria>
+        <disponibilidad>agotado</disponibilidad>
+        <imagen>https://media.justo.mx/products/Cereal_Kelloggs_Zucaritas_260g_1.jpg</imagen>
+    </producto>
+    <producto id="4">
+        <nombre>papel</nombre>
+        <descripcion>suaveeee</descripcion>
+        <precio>10</precio>
+        <categoria>papel</categoria>
+        <disponibilidad>agotado</disponibilidad>
+        <imagen>https://media.justo.mx/products/Cereal_Kelloggs_Zucaritas_260g_1.jpg</imagen>
+    </producto>
+    <producto id="5">
+        <nombre>cereales</nombre>
+        <descripcion>calidad-precio</descripcion>
+        <precio>1</precio>
+        <categoria>cereales bro, no llores</categoria>
+        <disponibilidad>stock de 5</disponibilidad>
+        <imagen>https://media.justo.mx/products/Cereal_Kelloggs_Zucaritas_260g_1.jpg</imagen>
+    </producto>
+</mercadona>

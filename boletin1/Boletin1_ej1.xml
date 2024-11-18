@@ -1,0 +1,35 @@
+<!-- Ejercicio 1:
+Crear un archivo xml sobre vuestra ficha de alumno. Debe tener un elemento raíz <ficha>
+donde se le incluirá un elemento hijo con los siguientes elementos hijo:
+    - <nombre>
+    - <edad>
+    - <grado matriculado>
+Añadir otro elmenento hijo <centro> con los elementos:
+    - <nombre del centro>
+    - <nombre del profesor>
+    - <número de aula>
+    - -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ficha [
+    <!ELEMENT ficha (alumno,centro)>
+    <!ELEMENT alumno (nombre,edad,grado_matriculado)>
+    <!ELEMENT centro (nombredelcentro,nombredelprofesor,numerodeaula)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT gradomatriculado (#PCDATA)>
+    <!ELEMENT nombredelcentro (#PCDATA)>
+    <!ELEMENT nombredelprofesor (#PCDATA)>
+    <!ELEMENT numerodeaula (#PCDATA)>
+]>
+<ficha>
+    <alumno>
+        <nombre>ale</nombre>
+        <edad>22</edad>
+        <gradomatriculado>desarrollo</gradomatriculado>
+    </alumno>
+    <centro>
+        <nombredelcentro>MPE</nombredelcentro>
+        <nombredelprofesor>lucia</nombredelprofesor>
+        <numerodeaula>1</numerodeaula>
+    </centro>
+</ficha>

@@ -1,0 +1,29 @@
+Ejercicio 2
+<!-- Crear un código XML sobre los datos de un libro. Debe tener un elemento
+raíz <libro> con los siguientes elementos:
+    - Título
+    - Autor
+    - Editorial
+    - ISBN
+    - Deposito_legal
+    - Páginas
+Añadir al principio la declaración del tipo de documento con <!DOCTYPE libro>
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro [
+    <!ELEMENT libro (titulo,autor,editorial,ISBN,deposito_legal,paginas)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT ISBN (#PCDATA)>
+    <!ELEMENT deposito_legal (#PCDATA)>
+    <!ELEMENT paginas (#PCDATA)>
+]>
+<libro>
+    <titulo>jamon</titulo>
+    <autor>Pablo Neruda</autor>
+    <editorial>Sudamericana</editorial>
+    <ISBN>9785</ISBN>
+    <deposito_legal>España</deposito_legal>
+    <paginas>240</paginas>
+</libro>

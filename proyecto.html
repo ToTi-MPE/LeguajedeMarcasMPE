@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoToTi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4; /* Color de fondo suave */
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto; /* Centrar el contenedor */
+            padding: 20px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espacio entre secciones */
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px; /* Bordes más redondeados */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #2980b9; /* Azul brillante */
+            font-size: 2em;
+            margin-top: 30px;
+            border-bottom: 2px solid #3498db; /* Azul claro */
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #e74c3c; /* Rojo brillante */
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: square; /* Cambiar tipo de viñetas */
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            background-color: #2c3e50; /* Azul oscuro */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Definición de Sistema Informático</h1>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+
+            <div class="section">
+                <h2>Parte 1: Definición de Sistema Informático</h2>
+                <p>Un <strong>sistema informático</strong> es un conjunto de componentes que interactúan entre sí para procesar, almacenar y transmitir información. Los componentes principales de un sistema informático son el <strong>hardware</strong> y el <strong>software</strong>, que trabajan de manera conjunta para ejecutar tareas y resolver problemas.</p>
+                <ul>
+                    <li><strong>Hardware</strong>: Se refiere a los componentes físicos del sistema, como el procesador, la memoria, los dispositivos de almacenamiento, entre otros.</li>
+                    <li><strong>Software</strong>: Son los programas y sistemas operativos que controlan y permiten que el hardware ejecute las tareas necesarias.</li>
+                </ul>
+                <p>Los sistemas informáticos están diseñados para ejecutar programas (software) que procesan datos y proporcionan resultados útiles para los usuarios.</p>
+            </div>
+
+            <div class="section">
+                <h2>Parte 1.1: Hardware</h2>
+                <p>El <strong>hardware</strong> está compuesto por todos los dispositivos y componentes físicos que conforman un sistema informático. Estos dispositivos trabajan juntos para permitir la ejecución de programas y la interacción con el usuario.</p>
+                <h3>1. Esquema de los Componentes de un Sistema Informático</h3>
+                <p>Un sistema informático consta de los siguientes componentes esenciales:</p>
+                <ul>
+                    <li><strong>CPU (Unidad Central de Procesamiento)</strong>: Es el componente principal del sistema que se encarga de ejecutar las instrucciones de los programas y controlar el flujo de datos entre los diferentes componentes del sistema.</li>
+                    <li><strong>Memoria</strong>: Almacena los datos y las instrucciones que la CPU necesita para ejecutar las tareas.</li>
+                    <li><strong>Dispositivos de Entrada y Salida (E/S)</strong>: Permiten la interacción entre el usuario y el sistema, tanto para recibir datos (entrada) como para enviarlos (salida).</li>
+                    <li><strong>Buses</strong>: Son los caminos a través de los cuales se transmiten los datos y las señales entre los componentes del sistema informático.</li>
+                </ul>
+
+                <h3>2. CPU (Unidad Central de Procesamiento)</h3>
+                <p>La <strong>CPU</strong> es el "cerebro" del sistema informático, responsable de interpretar y ejecutar las instrucciones contenidas en los programas. Está encargada de las operaciones de cálculo y control necesarias para procesar la información.</p>
+                <h4>Funciones de la CPU:</h4>
+                <ul>
+                    <li><strong>Ejecutar instrucciones</strong>: La CPU lee y ejecuta las instrucciones contenidas en los programas (como operaciones matemáticas, lógicas, etc.).</li>
+                    <li><strong>Controlar el flujo de información</strong>: La CPU coordina la comunicación entre otros componentes del sistema, como la memoria, las unidades de E/S y los dispositivos de almacenamiento.</li>
+                    <li><strong>Cálculos</strong>: Realiza cálculos aritméticos y lógicos necesarios para resolver los problemas planteados por los programas.</li>
+                </ul>
+                <h4>Partes de la CPU:</h4>
+                <ol>
+                    <li><strong>ALU (Unidad Aritmético-Lógica)</strong>: Se encarga de realizar las operaciones aritméticas (como sumas y multiplicaciones) y lógicas (como comparaciones de números).</li>
+                    <li><strong>CU (Unidad de Control)</strong>: La unidad de control supervisa la ejecución de instrucciones y coordina el flujo de información dentro de la CPU. Gestiona el ciclo de ejecución de las instrucciones.</li>
+                    <li><strong>Registros</strong>: Son pequeñas áreas de almacenamiento de alta velocidad que se utilizan para almacenar temporalmente datos e instrucciones que están siendo procesados por la CPU.</li>
+                </ol>
+
+                <h3>3. Memoria</h3>
+                <p>La <strong>memoria</strong> en un sistema informático es crucial porque almacena tanto los programas como los datos que son necesarios para el procesamiento. Sin memoria, la CPU no podría acceder a la información que necesita para ejecutar las instrucciones.</p>
+                <h4>Funciones de la Memoria:</h4>
+                <ul>
+                    <li><strong>Almacenaje temporal</strong>: Guarda los datos que están siendo procesados de manera temporal.</li>
+                    <li><strong>Almacenaje permanente</strong>: Algunas memorias permiten almacenar información de manera permanente (no volátil), como el sistema operativo o archivos del usuario.</li>
+                    <li><strong>Acceso rápido</strong>: Las memorias cercanas a la CPU, como la caché y la RAM, permiten un acceso mucho más rápido que las de almacenamiento masivo, como los discos duros.</li>
+                </ul>
+                <h4>Jerarquía de la Memoria:</h4>
+                <ol>
+                    <li><strong>Caché</strong>: Es una memoria extremadamente rápida que almacena datos e instrucciones que la CPU utiliza con frecuencia. Se encuentra dentro o cerca de la CPU. Existen diferentes niveles de caché (L1, L2, L3), con L1 siendo la más rápida pero de menor capacidad.</li>
+                    <li><strong>RAM (Memoria de Acceso Aleatorio)</strong>: Es la memoria principal del sistema y se utiliza para almacenar los programas y datos que están siendo ejecutados en un momento dado. Es volátil, lo que significa que pierde su contenido cuando se apaga el sistema.</li>
+                    <li><strong>Almacenamiento Secundario</strong>: Incluye dispositivos como discos duros (HDD), unidades de estado sólido (SSD), y discos ópticos, que ofrecen una mayor capacidad de almacenamiento pero son más lentos en comparación con la memoria RAM o caché.</li>
+                </ol>
+                <h4>Ejemplos de Memoria:</h4>
+                <ul>
+                    <li><strong>Caché L1</strong>: Se encuentra directamente dentro de la CPU y es la más rápida, pero su capacidad es limitada.</li>
+                    <li><strong>RAM DDR4</strong>: Es un tipo de memoria dinámica utilizada en la mayoría de los ordenadores modernos, que ofrece una buena relación entre velocidad y capacidad.</li>
+                    <li><strong>SSD (Unidad de Estado Sólido)</strong>: Almacena datos de manera permanente y es mucho más rápido que los discos duros tradicionales (HDD).</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>4. Unidades de Entrada y Salida</h3>
+                <p>Las <strong>unidades de Entrada y Salida (E/S)</strong> son los dispositivos que permiten la interacción del usuario con el sistema informático. Las unidades de entrada permiten al usuario ingresar datos, mientras que las unidades de salida muestran los resultados o permiten al usuario recibir información.</p>
+                <h4>Unidades de Entrada:</h4>
+                <ul>
+                    <li><strong>Teclado</strong>: Permite al usuario introducir texto y comandos.</li>
+                    <li><strong>Ratón</strong>: Dispositivo señalador que permite interactuar con el sistema gráfico.</li>
+                    <li><strong>Escáner</strong>: Convierte imágenes físicas en formato digital.</li>
+                    <li><strong>Micrófono</strong>: Captura sonido para ser procesado por el sistema.</li>
+                </ul>
+                <h4>Unidades de Salida:</h4>
+                <ul>
+                    <li><strong>Pantalla (Monitor)</strong>: Muestra visualmente la información procesada por el sistema.</li>
+                    <li><strong>Impresora</strong>: Convierte la información digital en un formato físico.</li>
+                    <li><strong>Altavoces</strong>: Permiten emitir sonidos o música a partir de los datos procesados.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>5. Buses</h3>
+                <p>Un <strong>bus</strong> es un conjunto de cables y protocolos que permite la transmisión de datos entre diferentes componentes de un sistema informático. Los buses son cruciales para el funcionamiento de los sistemas, ya que sin ellos, la CPU no podría comunicarse con la memoria, las unidades de entrada/salida o el almacenamiento.</p>
+                <h4>Tipos de Buses:</h4>
+                <ol>
+                    <li><strong>Bus de Datos</strong>: Transporta los datos entre la CPU, la memoria y otros dispositivos periféricos. Este bus es bidireccional, lo que significa que los datos pueden viajar en ambas direcciones.</li>
+                    <li><strong>Bus de Dirección</strong>: Transporta las direcciones de memoria a donde los datos deben ser leídos o escritos. Este bus es unidireccional, lo que significa que solo transmite datos de la CPU hacia los dispositivos de almacenamiento o memoria.</li>
+                    <li><strong>Bus de Control</strong>: Transporta señales de control que gestionan el flujo de datos, como señales de lectura y escritura, o de inicio y parada de operaciones.</li>
+                </ol>
+            </div>
+
+            <div class="section">
+                <h3>6. Esquema General de los Componentes y de Cómo se Conectan Entre Ellos</h3>
+                <p>En un sistema informático, la comunicación entre los diferentes componentes se lleva a cabo mediante los <strong>buses</strong>. El <strong>CPU</strong> interactúa con la <strong>memoria</strong> para acceder a los datos y las instrucciones necesarias para ejecutar los programas. Además, las <strong>unidades de E/S</strong> permiten la interacción con el usuario, y los datos se transfieren entre todos estos componentes a través de los buses de datos, dirección y control.</p>
+            </div>
+
+            <div class="section">
+                <h2>Parte 1.2: Software</h2>
+                <p>El <strong>software</strong> es el conjunto de programas, procedimientos y rutinas que dirigen y controlan el hardware del sistema informático para realizar tareas específicas. Existen diferentes tipos de software según su función y el nivel de interacción con el hardware.</p>
+                <h3>1. Definición de Software y de Programa</h3>
+                <p><strong>Software</strong>: Se refiere a las aplicaciones, programas y sistemas operativos que son ejecutados por el hardware para realizar tareas específicas. El software se clasifica en dos grandes categorías:</p>
+                <ul>
+                    <li><strong>Software de Sistema</strong>: Este software proporciona las herramientas necesarias para que el hardware y el software de aplicación trabajen juntos. Ejemplos incluyen el <strong>sistema operativo</strong> (como Windows, macOS, Linux), que gestiona los recursos del sistema y facilita la ejecución de programas.</li>
+                    <li><strong>Software de Aplicación</strong>: Son programas diseñados para realizar tareas específicas para el usuario. Ejemplos incluyen programas como Microsoft Word, Excel, navegadores web, y aplicaciones móviles.</li>
+                </ul>
+                <p><strong>Programa</strong>: Es un conjunto de instrucciones que le indican al sistema informático qué hacer. Un programa puede ser tan simple como una calculadora o tan complejo como un software de diseño gráfico o de gestión empresarial.</p>
+                <h4>Clasificación de Software:</h4>
+                <ol>
+                    <li><strong>Software de Sistema</strong>:
+                        <ul>
+                            <li><strong>Sistema Operativo</strong>: Controla todos los aspectos del hardware y permite que otros programas funcionen. Ejemplos incluyen Windows, macOS y Linux.</li>
+                            <li><strong>Controladores de dispositivo</strong>: Son programas que permiten que el sistema operativo se comunique con el hardware específico, como impresoras, tarjetas gráficas y otros periféricos.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Software de Aplicación</strong>:
+                        <ul>
+                            <li><strong>Aplicaciones de Productividad</strong>: Ejemplos incluyen procesadores de texto como Microsoft Word y hojas de cálculo como Microsoft Excel.</li>
+                            <li><strong>Aplicaciones Gráficas y Multimedia</strong>: Como Adobe Photoshop para la edición de imágenes o VLC para reproducir medios.</li>
+                            <li><strong>Software de Navegación Web</strong>: Ejemplos incluyen navegadores como Google Chrome o Mozilla Firefox.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="section">
+                <h3>2. Definición de Algoritmo</h3>
+                <p>Un <strong>algoritmo</strong> es un conjunto de pasos secuenciales bien definidos que resuelven un problema o realizan una tarea. Los algoritmos son fundamentales para cualquier programa de software, ya que describen cómo se deben procesar los datos para obtener un resultado.</p>
+                <h4>Ejemplo de Algoritmo para Hacer un Sándwich de Mantequilla y Jamón Cocido Tostado:</h4>
+                <ol>
+                    <li>Tomar dos rebanadas de pan.</li>
+                    <li>Untar una capa uniforme de mantequilla sobre una de las rebanadas.</li>
+                    <li>Colocar una capa de jamón cocido sobre la mantequilla.</li>
+                    <li>Colocar la segunda rebanada de pan encima.</li>
+                    <li>Colocar el sándwich en una tostadora o plancha y tostar hasta que el pan esté dorado y crujiente.</li>
+                    <li>Sacar el sándwich de la tostadora o plancha.</li>
+                    <li>Cortar y servir.</li>
+                </ol>
+                <h4>Diagrama de Flujo (simplificado):</h4>
+                <ul>
+                    <li><strong>Inicio</strong></li>
+                    <li>Tomar pan</li>
+                    <li>Untar mantequilla</li>
+                    <li>Colocar jamón</li>
+                    <li>Colocar segunda rebanada de pan</li>
+                    <li>Tostar el sándwich</li>
+                    <li>Servir</li>
+                    <li><strong>Fin</strong></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>3. Definición de Sistemas de Numeración y Ejemplos Aplicados a la Informática</h3>
+                <p>Los <strong>sistemas de numeración</strong> son conjuntos de símbolos y reglas para representar números. En informática, los sistemas más comunes son <strong>binario</strong>, <strong>octal</strong> y <strong>hexadecimal</strong>.</p>
+                <ul>
+                    <li><strong>Binario (Base 2)</strong>: Usa solo los dígitos 0 y 1. Es el sistema utilizado por los ordenadores internamente para realizar operaciones de procesamiento de información. Ejemplo: \( 1101_2 \) es igual a \( 13_{10} \) en decimal.</li>
+                    <li><strong>Octal (Base 8)</strong>: Utiliza los dígitos 0-7 y es utilizado en algunos sistemas informáticos como una representación compacta del binario. Ejemplo: \( 15_8 \) es igual a \( 13_{10} \) en decimal.</li>
+                    <li><strong>Hexadecimal (Base 16)</strong>: Utiliza los dígitos 0-9 y las letras A-F para representar los valores. Es muy usado en informática para representar números binarios de manera más compacta y legible. Ejemplo: \( A3_{16} \) es igual a \( 163_{10} \) en decimal.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>4. Clasificación de Lenguajes de Programación</h3>
+                <p>Los <strong>lenguajes de programación</strong> se dividen en distintas categorías según su cercanía al hardware o su nivel de abstracción:</p>
+                <ol>
+                    <li><strong>Lenguajes de Bajo Nivel</strong>:
+                        <ul>
+                            <li><strong>Lenguaje Máquina</strong>: El lenguaje que entiende directamente el procesador, compuesto exclusivamente por secuencias de 0s y 1s.</li>
+                            <li><strong>Lenguaje Ensamblador</strong>: Un paso más cercano al lenguaje máquina pero usando mnemónicos para facilitar la programación humana. Cada instrucción ensambladora se corresponde con una operación en lenguaje máquina.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Lenguajes de Alto Nivel</strong>:
+                        <ul>
+                            <li><strong>Lenguajes Interpretados</strong>: El código se ejecuta línea por línea por un intérprete, sin necesidad de ser compilado previamente. Ejemplos: Python, JavaScript.</li>
+                            <li><strong>Lenguajes Compilados</strong>: El código fuente es traducido a código máquina por un compilador antes de ser ejecutado. Ejemplos: C, C++.</li>
+                            <li><strong>Lenguajes de Propósito General</strong>: Estos lenguajes pueden ser utilizados para una amplia variedad de aplicaciones. Ejemplos: Java, C#, Python.</li>
+                            <li><strong>Lenguajes de Programación Declarativa</strong>: Estos lenguajes expresan la lógica del cálculo sin describir el flujo de control. Ejemplos: SQL (para bases de datos) y Prolog.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Bienvenido a InfoToTi</p>
+    </footer>
+</body>
+</html>
+  

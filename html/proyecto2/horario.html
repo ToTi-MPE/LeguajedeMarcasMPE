@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta cred set="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+  </head>
+
+  <body class="body-tablas">
+    <!-- Tenéis que diseñar un horario, en .html para su posterior implementación en la página, que
+    reúna los siguientes datos:
+        ● Eldesayuno es de Lunes a Domingo de 7:00 a 11: 00
+        ● Elalmuerzo es de Lunes a Domingo de 13:00 a 16:00
+        ● La cena es de Lunes a Domingo de 20:00 a 23:00
+        ● De Lunes a Viernes de 11:00 a 13:00 se abre el club infantil
+        ● Los Lunes, Miércoles y Viernes está abierto el spa de 16:00 a 20:00
+        ● Los Martes y Jueves está abierto el gimnasio de 16:00 a 20:00
+        ● Los Sábados hay fiesta en la piscina desde las 11:00 hasta las 23:00
+        ● Los Domingos hay piscina hasta las 18:00 y después hay actividades de yoga y
+        meditación hasta la hora de la cena.
+    Les gustaría que en el título del horario pusiera el nombre de su hotel. Quieren que tenga
+    una cabecera con Los días de la semana y una primera columna con las horas. Quieren que
+    cada evento tenga un color distinto a los demás.-->
+
+    <h1 class="tabla">Hotel Nombre pendiente</h1>
+
+    <div>
+        <table>
+            <thead>
+              <tr>
+                <th>:)</th>
+                <th colspan="7">Días de la semana</th>
+              </tr>
+              <tr>
+                <th>Actividades</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Desayuno</td>
+                <td colspan="7" style="text-align: center">7:00 a 11:00</td>
+              </tr>
+              <tr>
+                <td>Club Infantil</td>
+                <td colspan="5" style="text-align: center">11:00 a 13:00</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Almuerzo</td>
+                <td colspan="7" style="text-align: center">13:00 a 16:00</td>
+              </tr>
+              <tr>
+                <td>Spa</td>
+                <td>16:00 a 20:00</td>
+                <td></td>
+                <td>16:00 a 20:00</td>
+                <td></td>
+                <td>16:00 a 20:00</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Fiesta en la piscina</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>11:00 a 23:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Piscina</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>00:00 a 18:00</td>
+              </tr>
+              <tr>
+                <td>Actividades de Yoga y Meditación</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>18:00 a 20:00</td>
+              </tr>
+              <tr>
+                <td>Gimnasio</td>
+                <td></td>
+                <td>16:00 a 20:00</td>
+                <td></td>
+                <td>16:00 a 20:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>La Cena</td>
+                <td colspan="7" style="text-align: center">20:00 a 23:00</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <table>
+            <tr>
+              <td colspan="8" style="text-align: center">Horario de atención al cliente</td>
+            </tr>
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>7:00 a 11:00</td>
+                <td colspan="7" style="text-align: center;">Desayuno</td>
+            </tr>
+            <tr>
+                <td>11:00 a 13:00</td>
+                <td colspan="5" style="text-align: center;">Club Infantil</td>
+                <td >Fiesta en la piscina</td>
+                <td>Fiesta en la piscina</td>
+            </tr>
+            <tr>
+                <td>13:00 a 16:00</td>
+                <td colspan="5" style="text-align: center;">Almuerzo</td>
+                <td>Almuerso / Fiesta en la piscina</td>
+                <td>Almuerzo / Fiesta en la piscina</td>
+            </tr>
+            <tr>
+                <td>16:00 a 18:00</td>
+                <td rowspan="2">Spa</td>
+                <td rowspan="2">Gimnasio</td>
+                <td rowspan="2">Spa</td>
+                <td rowspan="2">Gimnasio</td>
+                <td rowspan="2">Spa</td>
+                <td rowspan="2">Fiesta en la piscina</td>
+                <td>Fiesta en la piscina</td>
+            </tr>
+            <tr>
+                <td>18:00 a 20:00</td>
+                <td>Actividad de yoga y meditación</td>
+            </tr>
+            <tr>
+                <td>20:00 a 23:00</td>
+                <td colspan="5" style="text-align: center;">Cena</td>
+                <td>Cena / Fiesta en la piscina</td>
+                <td>Cena</td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>

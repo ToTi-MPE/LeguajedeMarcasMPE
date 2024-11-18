@@ -1,0 +1,60 @@
+<!--Ejercicio 4:
+Crea un archivo XML que describa la tabla de contenidos de los planetas. 
+(Imagen 1). Tenéis que decidir que elementos añadir para que tenga sentido.-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE planetas [
+    <!ELEMENT planetas (planeta*)>
+    <!ELEMENT planeta (nombre, tipo, diametro)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT diametro (#PCDATA)>
+]>
+<planetas xmlns:Mercurio="http://example.com/Mercurio"
+          xmlns:venus="http://example.com/Venus"
+          xmlns:La_tierra="http://example.com/La_tierra"
+          xmlns:Marte="http://example.com/Marte"
+          xmlns:Jupiter="http://example.com/Jupiter"
+          xmlns:Saturno="http://example.com/Saturno"
+          xmlns:Urano="http://example.com/Urano"
+          xmlns:Neptuno="http://example.com/neptuno">
+    <Mercurio:planeta>
+        <nombre>Mercurio</nombre>
+        <tipo>Interior</tipo>
+        <diametro>0.382</diametro>
+    </Mercurio:planeta>
+    <venus:planeta>
+        <nombre>Venus</nombre>
+        <tipo>Interior</tipo>
+        <diametro>0.949</diametro>
+    </venus:planeta>
+    <La_tierra:planeta>
+        <nombre>Tierra</nombre>
+        <tipo>Interior</tipo>
+        <diametro>1</diametro>
+    </La_tierra:planeta>
+    <Marte:planeta>
+        <nombre>Marte</nombre>
+        <tipo>Interior</tipo>
+        <diametro>0.53</diametro>
+    </Marte:planeta>
+    <Jupiter:planeta>
+        <nombre>Jupiter</nombre>
+        <tipo>Exterior</tipo>
+        <diametro>11.2</diametro>
+    </Jupiter:planeta>
+    <Saturno:planeta>
+        <nombre>Saturno</nombre>
+        <tipo>Exterior</tipo>
+        <diametro>9.41</diametro>
+    </Saturno:planeta>
+    <Urano:planeta>
+        <nombre>Urano</nombre>
+        <tipo>Exterior</tipo>
+        <diametro>3.98</diametro>
+    </Urano:planeta>
+    <Neptuno:planeta>
+        <nombre>Neptuno</nombre>
+        <tipo>Exterior</tipo>
+        <diametro>3.81</diametro>
+    </Neptuno:planeta>  
+</planetas>

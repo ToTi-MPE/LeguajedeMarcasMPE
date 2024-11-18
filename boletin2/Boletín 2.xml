@@ -1,0 +1,66 @@
+<!-- Boletín 2 XML-->
+
+<!-- Ejemplo 1_________________________________________________________________________
+Añadir elementos con el mismo nombre puede generar conflicto al ser ambigüo. Para ello
+añadimos etiquetas a los elementos.
+
+Ejemplo mal construido:
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+    <titulo>El Principito</titulo>
+    <titulo>Sapiens</titulo>
+</libro>
+
+<!-- Ejemplo bien construido-->
+<!-- <?xml version="1.0" encoding="UTF-8"?>-->
+<libro xmlns:fiction="http://example.com/fiction" 
+xmlns:nonfiction="http://example.com/nonfiction">
+    <fiction:titulo>El Principito</fiction:titulo>
+    <nonfiction:titulo>Sapiens</nonfiction:titulo>
+</libro>
+<!-- El atributo xmlns se reserva para la localización del URI.-->
+<!--_____________________________________________________________________________________-->
+
+<!--Ejercicio 1
+Arregla el conflicto de nombres del siguiente texto añadiendo etiquetas que sean:
+<capital:capital> y <capital:contabilidad>. Recuerda declarar un espacio de nombres primero
+para cada uno de ellos.-->
+<!-- <?xml version="1.0" encoding="UTF-8"?>-->
+<capital>
+    <pais> Francia </pais>
+    <nombre> París </nombre>
+</capital>
+<capital>
+    <bonos>
+        <cantidad> 10 000€ </cantidad>
+    </bonos>
+    <letras>
+        <precio> 1000€ </precio>
+    </letras> 
+</capital>
+
+<!--Ejercicio 2: Crear un código XML sobre los datos de un libro. Debe tener un elemento
+raíz <libro> con los siguientes elementos:
+    - Título
+    - Autor
+    - Editorial
+    - ISBN
+    - Deposito_legal
+    - Páginas
+Añadir al principio la declaración del tipo de documento con <!DOCTYPE libro>
+-->
+
+<!-- Ejercicio 3: Crear una receta que incluya los siguientes elementos.
+- Elemento raiz: <receta>
+    - Nombre, tipo de comida, raciones, dificultad, tiempo e ingredientes.
+        - Dentro de ingredientes añadir distintos elementos ingredientes con los siguientes
+         atributos; cantidad unidad (gramos, litros,etc) nombre
+    - Un elemento preparación con los pasos a escribir.
+        -->
+
+<!-- Ejercicio 4: Crea un archivo XML que describa la tabla de contenidos de los planetas. 
+(Imagen 1). Tenéis que decidir que elementos añadir para que tenga sentido.-->
+
+<!-- Ejercicio 5: Crea un código XML que describa la tabla de evolución de la informática.
+(Imagen 2).-->

@@ -1,0 +1,90 @@
+<!-- Ejercicio 1 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensaje [
+    <!ELEMENT mensaje (remite, destinatario, asunto, Parrafo, Parrafo, comentario)>
+    <!ELEMENT remite (Nombre, email)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT destinatario (Nombre, email)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT Asunto (li*)>
+    <!ELEMENT Parrafo (li*)>
+    <!ELEMENT li (#PCDATA)>
+    <!ELEMENT comentario (li*)>
+]>
+
+<mensaje>
+    <remite>
+        <Nombre>Juan</Nombre>
+        <email>juan@gmail.com</email>
+    </remite>
+    <Destinatario>
+        <Nombre>pepe</Nombre>
+        <email>pepe@gmail.com</email>
+    </Destinatario>
+    <Asunto>
+        <li>Felicidades</li>
+    </Asunto>
+    <Parrafo>
+        <li>Felicidades por tu ascenso</li>
+    </Parrafo>
+    <Parrafo>
+        <li>Un saludo</li>
+    </Parrafo>
+    <Comentario>
+        <li></li>
+    </Comentario>
+</mensaje>
+
+<!-- Ejercicio 3 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ELEMENT factura (cliente)>
+    <!ELEMENT cliente (nombre, telefono, datoFacturas)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT datoFacturas (descripcion, cantidad, precio)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<factura num="999">
+    <cliente numcli="879">
+        <nombre>José Rodriguez</nombre>
+        <telefono>910101010</telefono>
+    </cliente>
+    <datosfacturas>
+        <datoFacturas ref="A101">
+            <descripcion>placa Base QDI</descripcion>
+            <cantidad>1</cantidad>
+            <precio>230</precio>
+        </datoFacturas>
+        <datoFacturas ref="A105">
+            <descripcion>DIMM DDR 512 mb</descripcion>
+            <cantidad>4</cantidad>
+            <precio>110</precio>
+        </datoFacturas>
+        <datoFacturas ref="A107">
+            <descripcion>Disco duro 800 GB</descripcion>
+            <cantidad>1</cantidad>
+            <precio>150</precio>
+        </datoFacturas>
+    </datosfacturas>    
+</factura>
+
+<!-- Ejercicio 4 -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agenda>
+    <contacto>
+        <nombre>Juan</nombre>
+        <telefonofijo>199999999</telefonofijo>
+        <telefonomovil>911111111</telefonomovil>
+    </contacto>
+    <contacto>
+        <emergencia>987654321</emergencia>
+        <contacto>123456789</contacto>
+    </contacto>
+</agenda>

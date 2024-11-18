@@ -1,0 +1,66 @@
+<!--Ejercicio 3:
+Crea un archivo xml que describa un catálogo de una tienda de música en línea.
+    - El archivo debe tener un elemento raíz llamado <catalogo>.
+    - Dentro del catálogo, crea al menos dos <album>, cada uno con los siguientes elementos:
+        -<titulo>
+        - <artista>
+        - <año>
+Cada <album> debe contener un elemento <canciones>, dentro del cual añadas varios elementos 
+<cancion>, cada uno con un atributo duracion y un valor de texto con el nombre de la canción.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo [
+    <!ELEMENT catalogo (album_1,album_2)>
+    <!ELEMENT album_1 (titulo,artista,año,canciones)>
+    <!ELEMENT album_2 (titulo,artista,año,canciones)>
+    <!ELEMENT canciones (cancion_1,cancion_2,cancion_3)>
+    <!ELEMENT cancion_1(nombre)>
+    <!ELEMENT cancion_2(nombre)>
+    <!ELEMENT cancion_3(nombre)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT artista (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT artista (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+]>
+<catalogo>
+    <album_1>
+        <titulo>ale</titulo>
+        <artista>22</artista>
+        <año>2024</año>
+        <canciones>
+            <cancion_1 duracion="2:30">
+                <nombre>manteca</nombre>
+            </cancion_1>
+            <cancion_2 duracion="2:20">
+                <nombre>manteca</nombre>
+            </cancion_2>
+            <cancion_3 duracion="2:24">
+                <nombre>manteca</nombre>
+            </cancion_3>
+        </canciones>
+    </album_1>
+    <album_2>
+        <titulo>olee</titulo>
+        <artista>50cent</artista>
+        <año>2024</año>
+        <canciones>
+            <cancion_1 duracion="2:32">
+                <nombre>manteca</nombre>
+            </cancion_1>
+            <cancion_2 duracion="2:27">
+                <nombre>manteca</nombre>
+            </cancion_2>
+            <cancion_3 duracion="2:33">
+                <nombre>manteca</nombre>
+            </cancion_3>
+        </canciones>
+    </album_2>
+</catalogo>

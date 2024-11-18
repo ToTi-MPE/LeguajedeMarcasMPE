@@ -1,0 +1,35 @@
+<!-- Ejercicio 2:
+Crear un archivo xml que describa una lista de productos. debe contener
+    - Un elemento raíz llamado <productos>
+    - Cada producto debe representarse por un elemento <producto> y cada uno de ellos 
+    debe tener un atributo id que identifique el producto
+    - Dentro de cada <producto> incluir los elementos <nombre> y <precio>
+    - Añadir por lo menos tres productos 
+    -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productos [
+    <!ELEMENT productos (producto_1,producto_2,producto_3)>
+    <!ELEMENT producto_1 (nombre,precio)>
+    <!ELEMENT producto_2 (nombre,precio)>
+    <!ELEMENT producto_3 (nombre,precio)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<productos>
+    <producto_1 ID="1">
+        <nombre>jabon</nombre>
+        <precio>22</precio>
+    </producto_1>
+    <producto_2 ID="2">
+        <nombre>jamon</nombre>
+        <precio>22</precio>
+    </producto_2>
+    <producto_3 ID="3">
+        <nombre>queso</nombre>
+        <precio>22</precio>
+    </producto_3>
+</productos>

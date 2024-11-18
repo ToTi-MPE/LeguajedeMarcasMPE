@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--http://192.168.1.46:5500/html/proyecto2/form_reserva.html --> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de actividades</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+ <header>
+            <h1>Hotel Bella Vista</h1>
+            <h5>Reservas online</h5>
+        </header>
+<body>
+    <form method="post" action = "">
+       
+        <!--● Unencabezado con el nombre del hotel y un subtítulo que diga “reservas online”
+        ● Unapartado de datos personales:
+            ○ Unacajapara el nombre
+            ○ Unacajapara el apellido
+            ○ Unacajapara el teléfono
+            ○ Unacajapara el correo electrónico-->
+        <div class="personal-datos">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+            <br>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+        </div>
+        <!-- Unapartado sobre datos relevantes a la reserva
+ ○ Unmenúdesplegable con el título “Noches”, donde se pueda seleccionar 1,
+ 2, 3, 4, 5+ como opciones
+ ○ Unaselección de tipo de cama donde solo se podrá seleccionar una opción
+ ■ Simple
+ ■ Doble
+ ■ Matrimonio
+ ○ Unaselección de extras donde se podrá seleccionar más de una opción
+ ■ Camasupletoria
+ ■ Jacuzzi
+ ■ Bañoprivado
+ ○ Unaselección donde se podrá elegir cuántas comidas se quieren llevar a
+ cabo en el hotel
+ ■ Desayuno
+ ■ Comida
+ ■ Cena
+ ○ Unacajapara introducir la fecha de llegada
+ ○ Unacajapara introducir la hora aproximada de llegada. Este dato no es
+ obligatorio.-->
+    <div class="datos-reserva">
+        <label for="noches">Noches:</label>
+        <select id="noches" name="noches" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5+">5+</option>
+        </select>
+        <br>
+        <br>
+        <label for="cama">Tipo de cama:</label>
+        <select id="cama" name="cama" required>
+            <option value="Simple">Simple</option>
+            <option value="Doble">Doble</option>
+            <option value="Matrimonio">Matrimonio</option>
+        </select>
+        <br>
+        <br>
+        <label for="extras">Extras:</label>
+        <div class="extras">
+            <input type="checkbox" id="camasupletoria" name="extras[]" value="Camasupletoria">
+            <label for="camasupletoria">Cama supletoria</label>
+            <br>
+            <input type="checkbox" id="jacuzzi" name="extras[]" value="Jacuzzi">
+            <label for="jacuzzi">Jacuzzi</label>
+            <br>
+            <input type="checkbox" id="banoprivado" name="extras[]" value="Bañoprivado">
+            <label for="banoprivado">Baño privado</label>
+            <br>
+        </div>
+        <br>
+        <br>
+        <label for="Servicio_cuarto">Servicio al cuarto:</label>
+        <div class="Servicio_cuarto">
+            <input type="checkbox" id="desayuno" name="Servicio_cuarto[]" value="Desayuno">
+            <label for="Desayuno">Desayuno</label>
+            <br>
+            <input type="checkbox" id="Almuerzo" name="Servicio_cuarto[]" value="Almuerzo">
+            <label for="Almuerzo">Almuerzo</label>
+            <br>
+            <input type="checkbox" id="Cena" name="Servicio_cuarto[]" value="Cena">
+            <label for="Cena">Cena</label>
+            <br>
+        </div>
+        <br>
+        <br>
+        <label for="tiempollegada">Tiempo de Llegada:</label>
+        <div class="Tiempollegada">
+            <input type="date" id="fechaLlegada" name="Fecha de llegada[]" required>
+            <label for="fechallegada">Fecha de llegada</label>
+            <br>
+            <input type="time" id="Horallegada" name="Hora de llegada[]" optional>
+            <label for="HoraLlegada">hora de llegada</label>
+            <br>
+        </div>
+        <br>
+        <br>
+        <label for="comentarios"> Comentarios:</label>
+        <br>
+        <textarea name="comentarios" placeholder="comentarios" rows="3" cols="30">
+            
+        </textarea>
+        <br>
+            <button type="submit" id="comentarios" name="comentarios">Enviar</button>
+        <br>
+            <button type="reset" id="personal-datos" name="resetear formulario">Restablecer</button>
+        <br>
+   </div>
+   <br>
+    </form>
+</body>
+    <footer>
+         <p>Contactanos:
+            tlf: +34 678 99 88 78
+        </p>
+        <p>Encuentranos:
+            direccion: callde de Sevilla, 3, 28014, Madrid
+        </p>
+    </footer>
+</html>

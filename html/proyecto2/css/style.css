@@ -1,0 +1,64 @@
+/* Horarios */ç
+.body-tablas{
+    background-image: url('th.jpg');
+}
+.tabla{
+    text-align: center;
+    color: #5d734d;
+    
+}
+div{
+    display:flex;
+    justify-content: space-around;
+}
+td,th{
+    padding: 8px;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+tr:nth-child(2),th{
+    background-color: #e8e1bc;
+    color: #5d734d;
+}
+tbody>tr>td:nth-child(1){
+    background-color: #5d734d;
+    color: white !important;
+}
+tbody>tr>td{
+    background-color: #b7c8a6;
+    color: #4b5c3f;
+}
+tbody>tr>td{
+
+}
+
+/* Formulario de reservas */
+header{
+    display: flex;
+    min-height: 90px;
+    background-color: rgb(49, 54, 54);
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+h1{
+    color: beige;
+}
+
+h5{
+    color: beige;
+}
+
+
+form{
+    
+    width: 800px;
+    background: rgb(27, 134, 196);
+    padding: 20;
+    margin: auto;
+    margin-top: 100px;
+
+}

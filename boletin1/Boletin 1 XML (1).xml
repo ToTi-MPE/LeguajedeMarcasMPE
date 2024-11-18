@@ -1,0 +1,102 @@
+0<!-- Ficha de iniciación en LM XML-->
+
+<!-- Ejemplo 1: Crear un primer archivo XML.
+Crear un archivo simple con la información sobre una película que contenga
+los siguientes elementos:
+- Un elemento raiz llamado <pelicula> que lleve dentro los elementos hijos
+    - <titulo>
+    - <director>
+    - <año>
+Y rellenar con una película ficticia-->
+<?xml version="1.0" encoding="UTF-8"?>
+<pelicula>
+    <titulo>El Señor de los Anillos: La Comunidad del Anillo</titulo>
+    <director>Peter Jackson</director>
+    <año>2001</año>
+</pelicula>
+
+<!-- Ejemplo 2: Añadir atributos.
+Añadir un atributo a un elemento ayuda a identificarlo, por ejemplo
+<alumno id="56849534-G" añadir el dni para identificarlo-->
+<?xml version="1.0" encoding="UTF-8"?>
+<ficha>
+    <alumno id="56849534">
+        <nombre>Juan Pérez Martínez</nombre>
+        <fecha_de_nacimiento>
+            <dia> 20</dia>
+            <mes> 11</mes>
+            <año> 1996</año>
+        </fecha_de_nacimiento>
+    </alumno>
+</ficha>
+<!-- Ejemplo 3:
+Añade un DTD -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libreria [
+    <!ELEMENT libreria (libro+)>
+    <!ELEMENT libro (titulo, autor, año)>
+    <!ELEMENT titulo (#PCDATA)> <!-- #PCDATA significa que el elemento puede contener texto-->
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+]>
+<libreria>
+    <libro>
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <año>1949</año>
+    </libro>
+    <libro>
+        <titulo>El Principito</titulo>
+        <autor>Antoine de Saint-Exupéry</autor>
+        <año>1943</año>
+    </libro>
+</libreria>
+
+
+
+<!-- Ejercicio 1:
+Crear un archivo xml sobre vuestra ficha de alumno. Debe tener un elemento raíz <ficha>
+donde se le incluirá un elemento hijo con los siguientes elementos hijo:
+    - <nombre>
+    - <edad>
+    - <grado matriculado>
+Añadir otro elmenento hijo <centro> con los elementos:
+    - <nombre del centro>
+    - <nombre del profesor>
+    - <número de aula>
+    - -->
+
+
+
+<!-- Ejercicio 2:
+Crear un archivo xml que describa una lista de productos. debe contener
+    - Un elemento raíz llamado <productos>
+    - Cada producto debe representarse por un elemento <producto> y cada uno de ellos 
+    debe tener un atribujo id que identifique el producto
+    - Dentro de cada <producto> incluir los elementos <nombre> y <precio>
+    - Añadir por lo menos tres productos 
+    -->
+
+
+<!--Ejercicio 3:
+Crea un archivo xml que describa un catálogo de una tienda de música en línea.
+    - El archivo debe tener un elemento raíz llamado <catalogo>.
+    - Dentro del catálogo, crea al menos dos <album>, cada uno con los siguientes elementos:
+        -<titulo>
+        - <artista>
+        - <año>
+Cada <album> debe contener un elemento <canciones>, dentro del cual añadas varios elementos 
+<cancion>, cada uno con un atributo duracion y un valor de texto con el nombre de la canción.
+-->
+
+
+<!-- Ejercicio 4:
+Crea un archivo XML que describa una receta de cocina.
+    - El elemento raíz debe ser <receta>.
+    - Dentro de <receta>, debe haber un elemento <nombre> con el nombre de la receta.
+    - Un elemento <ingredientes> que contiene una lista de <ingrediente>, 
+      donde cada ingrediente tiene un atributo cantidad.
+    - Un elemento <instrucciones>, que contiene una combinación de texto libre y 
+      elementos como <paso> para describir los pasos.
+-->
+

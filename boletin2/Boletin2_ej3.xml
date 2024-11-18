@@ -1,0 +1,49 @@
+<!--Ejercicio 3:
+  Crear una receta que incluya los siguientes elementos.
+- Elemento raiz: <receta>
+    - Nombre, tipo de comida, raciones, dificultad, tiempo e ingredientes.
+        - Dentro de ingredientes añadir distintos elementos ingredientes con los siguientes
+         atributos; cantidad unidad (gramos, litros,etc) nombre
+    - Un elemento preparación con los pasos a escribir.
+        -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE receta [
+    <!ELEMENT receta (nombre, tipo_comida, raciones, dificultad, tiempo, ingredientes, preparacion)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT comida (#PCDATA)>
+    <!ELEMENT raciones (#PCDATA)>
+    <!ELEMENT dificultad (#PCDATA)>
+    <!ELEMENT tiempo (#PCDATA)>
+    <!ELEMENT ingredientes (ingrediente)>
+    <!ELEMENT ingrediente (cantidad, unidad, nombre)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT unidad (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT preparacion (paso_1,paso_2)>
+    <!ELEMENT paso_1 (#PCDATA)>
+    <!ELEMENT paso_2 (#PCDATA)>
+]>
+
+<receta>
+    <nombre>Hamburguesa</nombre>
+    <tipo_comida>Comida Europea</tipo_comida>
+    <raciones>Porciones de 4</raciones>
+    <dificultad>Fácil</dificultad>
+    <tiempo>15 minutos</tiempo>
+    <ingredientes>
+        <ingrediente>
+            <cantidad>1</cantidad>
+            <unidad>kg</unidad>
+            <nombre>Pan</nombre>
+        </ingrediente>
+    </ingredientes>
+    <preparacion>
+        <paso_1>
+            <li>Preparar el pan y el huevo.</li>
+        </paso_1>
+        <paso_2>
+            <li>Colocar el pan en una fuente y el huevo en el centro.</li>
+        </paso_2>
+    </preparacion>
+</receta>

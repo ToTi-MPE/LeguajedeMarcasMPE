@@ -1,0 +1,35 @@
+<!-- Ejercicio 4:
+Crea un archivo XML que describa una receta de cocina.
+    - El elemento raíz debe ser <receta>.
+    - Dentro de <receta>, debe haber un elemento <nombre> con el nombre de la receta.
+    - Un elemento <ingredientes> que contiene una lista de <ingrediente>, 
+      donde cada ingrediente tiene un atributo cantidad.
+    - Un elemento <instrucciones>, que contiene una combinación de texto libre y 
+      elementos como <paso> para describir los pasos.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE receta [
+    <!ELEMENT receta (nombre,ingredientes,instrucciones)>
+    <!ELEMENT ingredientes (ingrediente)>
+    <!ELEMENT instrucciones (paso)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ingrediente (#PCDATA)>
+    <!ELEMENT paso(#PCDATA)>
+]>
+<receta>
+    <nombre>arroz</nombre>
+    <ingredientes>
+        <ingrediente cantidad="1">arroz</ingrediente>
+    </ingredientes>
+    <instrucciones>
+        <paso_1>
+            <li>paso 1</li>
+        </paso_1>
+        <paso_2>
+            <li>paso 2</li>
+        </paso_2>
+        <paso_3>
+            <li>paso 3</li>
+        </paso_3>
+    </instrucciones>
+</receta>

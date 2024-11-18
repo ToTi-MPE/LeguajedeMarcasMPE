@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>ej6</title>
+    <meta charset="uft-8">
+</head>
+<body>
+    <center>
+        <h2>
+            Formulario con difetentes tipos de campos
+        </h2>
+    </center>
+    <form action="formulario" method="post">
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" type="text">
+        <br>
+        <br>
+        <label for="apellido">apellido:</label>
+        <input name="apellido" type="text">
+        <br>
+        <br>
+        <label for="e-mail">E-mail</label>
+        <input name="e-mail" type="email">
+        <br><br>
+        <label for="contra">Contraseña:</label>
+        <input name="contra" type="password">
+        <br>
+        <br>
+        <form>
+            <aside style="display: inline-block;">
+                <h7>Sexo</h7><br>
+                <input type="radio" id="hombre" value="hombre" name="sexo">
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label><br>
+            </aside>
+        
+            <aside style="display: inline-block;">
+                <h7>Profesión</h7><br>
+                <input type="radio" id="profesor" name="profesion" value="profesor">
+                <label for="profesor">Profesor</label><br>
+                <input type="radio" id="programador" name="profesion" value="programador">
+                <label for="programador">Programador</label><br>
+                <input type="radio" id="disenadorgrafico" name="profesion" value="disenadorgrafico">
+                <label for="disenadorgrafico">Diseñador gráfico</label><br>
+            </aside>
+            <aside style="display: inline-block;">
+                <h7>Aficiones</h7><br>
+                <input type="checkbox" id="ciencia" name="aficiones" value="ciencia">
+                <label for="ciencia">Ciencia</label><br>
+                <input type="checkbox" id="libros" name="aficiones" value="libros">
+                <label for="libros">Libros</label><br>
+            </aside>
+
+        </form>
+    </form>
+</body>

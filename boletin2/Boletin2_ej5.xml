@@ -1,0 +1,113 @@
+<!--Ejercicio 5:
+  Crea un código XML que describa la tabla de evolución de la informática.
+(Imagen 2).-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE evolucion_informatica [
+    <!ELEMENT evolucion_informatica (año,mes,dia,hecho,autor,descripcion)>
+    <!ELEMENT año (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT hecho (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+]>
+<tabla columna="6">
+    <fila>
+        <celda>año</celda>
+        <celda>mes</celda>
+        <celda>dia</celda>
+        <celda>hecho</celda>
+        <celda>autor</celda>
+        <celda>descripcion</celda>    
+    </fila>
+    <fila>
+        <celda>3500 A.C</celda>
+        <celda> </celda>
+        <celda> </celda>
+        <celda>Abaco</celda>
+        <celda> </celda>
+        <celda>Es el dispositivo más antiguo utilizado para realizar operaciones aritméticas.</celda>
+    </fila>
+    <fila>
+        <celda>1646</celda>
+        <celda>Marzo</celda>
+        <celda>8</celda>
+        <celda>Calculadora Univesal</celda>
+        <celda>Leibnitz</celda>
+        <celda>Máquina que suma, resta, multiplica, divide y hace raíces cuadradas.</celda>
+    </fila>
+    <fila>
+        <celda>1792</celda>
+        <celda>Marzo</celda>
+        <celda>14</celda>
+        <celda>Máquina analitica</celda>
+        <celda>Charles Babbage y Ada Lovelace</celda>
+        <celda>Máquina que resolvía funciones y obtenía tablas.</celda>
+    </fila>
+    <fila>
+        <celda>1852</celda>
+        <celda>Abril</celda>
+        <celda>12</celda>
+        <celda>Varias Maquinas</celda>
+        <celda>Torres Quevedo</celda>
+        <celda>Construyó una máquina para jugar al ajedrez y una calculadora.</celda>
+    </fila>
+    <fila>
+        <celda>1936</celda>
+        <celda>Septiembre</celda>
+        <celda>15</celda>
+        <celda>Maquina de Turing</celda>
+        <celda>Alan Turing</celda>
+        <celda>Máquina capaz de resolver todo tipo de problemas con la solución algoritmica. Con Turing se inició la teoría matemática de la computación.</celda>
+    </fila>
+    <fila>
+        <celda>1943</celda>
+        <celda> </celda>
+        <celda> </celda>
+        <celda>Ordenador digital electronico</celda>
+        <celda>Maurice V. Wilkes</celda>
+        <celda>El primer ordenador del mundo fue el EDSAC, desarrollado en la Universidad de Cambridge.</celda>
+    </fila>
+    <fila>
+        <celda>1958</celda>
+        <celda></celda>
+        <celda></celda>
+        <celda>Segunda generacion de ordenadores</celda>
+        <celda>IBM</celda>
+        <celda>Reemplaza las válvulas de vacío por los transistores. Son más pequeños y consumen menos electricidad.</celda>
+    </fila>
+    <fila>
+        <celda>1963</celda>
+        <celda></celda>
+        <celda></celda>
+        <celda>Código ASCII</celda>
+        <celda>ANSI</celda>
+        <celda>Nace a partir de reordenar y expandir el conjunto de símbolos y caracteres utilizados en aquel momento en telegrafía por la compañía Bell.</celda>
+    </fila>
+    <fila>
+        <celda>1964</celda>
+        <celda></celda>
+        <celda></celda>
+        <celda>Chips</celda>
+        <celda>S. Kilby y Robert Noyce</celda>
+        <celda>Estructura de pequeñas dimensiones de material semiconductor, sobre la que se fabrican circuitos electrónicos.</celda>
+    </fila>
+    <fila>
+        <celda>1969</celda>
+        <celda></celda>
+        <celda></celda>
+        <celda>ARPANET</celda>
+        <celda>MIT (Massa-chusetts Institute of Technology)</celda>
+        <celda>Red de computadoras construida en 1969 como un medio para enviar datos militares y conectar grupos de investigación, a través de los Estados Unidos..</celda>
+    </fila>
+    <fila>
+        <celda>1981</celda>
+        <celda></celda>
+        <celda></celda>
+        <celda>MS-DOS</celda>
+        <celda>Microsoft</celda>
+        <celda>Es un sistema operativo de disco para el IBM PC y sistemas compatibles. Este sistema operativo</celda>
+    </fila>
+</tabla>
