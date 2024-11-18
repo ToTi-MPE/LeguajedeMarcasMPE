@@ -20,24 +20,26 @@
             ○ Unacajapara el apellido
             ○ Unacajapara el teléfono
             ○ Unacajapara el correo electrónico-->
-        <div class="personal-datos">
+            <p>
+        <section class="personal-datos">
+            <h4> datos personales </h4>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input class="controls" type="text" id="nombre" name="nombre" required>
             <br>
             <br>
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+            <input class="controls" type="text" id="apellido" name="apellido" required>
             <br>
             <br>
             <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+            <input class="controls" type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
             <br>
             <br>
             <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <input class="controls" type="email" id="email" name="email" required>
             <br>
             <br>
-        </div>
+        </section>
         <!-- Unapartado sobre datos relevantes a la reserva
  ○ Unmenúdesplegable con el título “Noches”, donde se pueda seleccionar 1,
  2, 3, 4, 5+ como opciones
@@ -57,9 +59,9 @@
  ○ Unacajapara introducir la fecha de llegada
  ○ Unacajapara introducir la hora aproximada de llegada. Este dato no es
  obligatorio.-->
-    <div class="datos-reserva">
+    <section class="datos-reserva">
         <label for="noches">Noches:</label>
-        <select id="noches" name="noches" required>
+        <select class="controls" id="noches" name="noches" required>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -69,7 +71,7 @@
         <br>
         <br>
         <label for="cama">Tipo de cama:</label>
-        <select id="cama" name="cama" required>
+        <select class="controls" id="cama" name="cama" required>
             <option value="Simple">Simple</option>
             <option value="Doble">Doble</option>
             <option value="Matrimonio">Matrimonio</option>
@@ -78,27 +80,27 @@
         <br>
         <label for="extras">Extras:</label>
         <div class="extras">
-            <input type="checkbox" id="camasupletoria" name="extras[]" value="Camasupletoria">
+            <input class="controls" type="checkbox" id="camasupletoria" name="extras[]" value="Camasupletoria">
             <label for="camasupletoria">Cama supletoria</label>
-            <br>
-            <input type="checkbox" id="jacuzzi" name="extras[]" value="Jacuzzi">
+            
+            <input class="controls" type="checkbox" id="jacuzzi" name="extras[]" value="Jacuzzi">
             <label for="jacuzzi">Jacuzzi</label>
-            <br>
-            <input type="checkbox" id="banoprivado" name="extras[]" value="Bañoprivado">
+            
+            <input class="controls" type="checkbox" id="banoprivado" name="extras[]" value="Bañoprivado">
             <label for="banoprivado">Baño privado</label>
-            <br>
+            
         </div>
         <br>
         <br>
         <label for="Servicio_cuarto">Servicio al cuarto:</label>
         <div class="Servicio_cuarto">
-            <input type="checkbox" id="desayuno" name="Servicio_cuarto[]" value="Desayuno">
+            <input class="controls" type="checkbox" id="desayuno" name="Servicio_cuarto[]" value="Desayuno">
             <label for="Desayuno">Desayuno</label>
             <br>
-            <input type="checkbox" id="Almuerzo" name="Servicio_cuarto[]" value="Almuerzo">
+            <input class="controls" type="checkbox" id="Almuerzo" name="Servicio_cuarto[]" value="Almuerzo">
             <label for="Almuerzo">Almuerzo</label>
             <br>
-            <input type="checkbox" id="Cena" name="Servicio_cuarto[]" value="Cena">
+            <input class="controls" type="checkbox" id="Cena" name="Servicio_cuarto[]" value="Cena">
             <label for="Cena">Cena</label>
             <br>
         </div>
@@ -106,10 +108,10 @@
         <br>
         <label for="tiempollegada">Tiempo de Llegada:</label>
         <div class="Tiempollegada">
-            <input type="date" id="fechaLlegada" name="Fecha de llegada[]" required>
+            <input class="controls" type="date" id="fechaLlegada" name="Fecha de llegada[]" required>
             <label for="fechallegada">Fecha de llegada</label>
             <br>
-            <input type="time" id="Horallegada" name="Hora de llegada[]" optional>
+            <input class="controls" type="time" id="Horallegada" name="Hora de llegada[]" optional>
             <label for="HoraLlegada">hora de llegada</label>
             <br>
         </div>
@@ -117,24 +119,25 @@
         <br>
         <label for="comentarios"> Comentarios:</label>
         <br>
-        <textarea name="comentarios" placeholder="comentarios" rows="3" cols="30">
-            
+        <textarea  class="controls" name="comentarios" placeholder="comentarios" rows="3" cols="30">
+      
         </textarea>
         <br>
-            <button type="submit" id="comentarios" name="comentarios">Enviar</button>
+            <button class="controls" type="submit" id="comentarios" name="comentarios">Enviar</button>
         <br>
-            <button type="reset" id="personal-datos" name="resetear formulario">Restablecer</button>
+            <button class="controls" type="reset" id="personal-datos" name="resetear formulario">Restablecer</button>
         <br>
-   </div>
+    </section>
+</p>
    <br>
     </form>
 </body>
     <footer>
-         <p>Contactanos:
+         <p> <h5>Contactanos:
             tlf: +34 678 99 88 78
-        </p>
-        <p>Encuentranos:
-            direccion: callde de Sevilla, 3, 28014, Madrid
-        </p>
+         </h5> </p>
+        <p> <h5> Encuentranos:
+            calle de Sevilla, 3, 28014, Madrid
+        </h5> </p>
     </footer>
 </html>

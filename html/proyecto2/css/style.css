@@ -1,13 +1,10 @@
 /* Horarios */ç
-.body-tablas{
-    background-image: url('th.jpg');
-}
+
 .tabla{
+    color: white;
     text-align: center;
-    color: #5d734d;
-    
 }
-div{
+.horarios{
     display:flex;
     justify-content: space-around;
 }
@@ -52,13 +49,44 @@ h5{
     color: beige;
 }
 
-
-form{
-    
-    width: 800px;
-    background: rgb(27, 134, 196);
-    padding: 20;
+h6{
+    color: beige;
+}
+section{
+    color: beige;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: fit-content;
+    background: rgb(49, 54, 54);
+    padding: 30px;
     margin: auto;
     margin-top: 100px;
-
+    
 }
+
+
+
+.controls{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(228, 228, 220);
+    
+}
+form{
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+footer{
+    display: flex;
+    min-height: 90px;
+    background-color: rgb(49, 54, 54);
+    text-align: left;
+    justify-content: space-around;
+    
+}
+
