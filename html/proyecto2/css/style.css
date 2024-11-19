@@ -1,11 +1,15 @@
-/* Horarios */ç
+/* Horarios */
 
-.tabla{
+.h1hotel {
     color: white;
     text-align: center;
 }
 .horarios{
     display:flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
     justify-content: space-around;
 }
 td,th{
@@ -15,21 +19,63 @@ td,th{
     
 }
 tr:nth-child(2),th{
-    background-color: #e8e1bc;
+    background-color: #de9bbe;
     color: #5d734d;
 }
 tbody>tr>td:nth-child(1){
-    background-color: #5d734d;
-    color: white !important;
+    background-color: #9aa2d0;
+    color: white ;
 }
 tbody>tr>td{
-    background-color: #b7c8a6;
+    background-color: #65c7e0;
     color: #4b5c3f;
 }
 tbody>tr>td{
 
 }
 
+/* Colores de la tabla */
+
+
+.hs tr:nth-child(3)>td:nth-child(2){
+    background-color: #f5d0e1;
+}
+
+.hs tr:nth-child(4)>td:nth-child(2){
+    background-color: #e8cfe5;
+}
+.hs tr:nth-child(4)>td:nth-child(3),
+.hs tr:nth-child(4)>td:nth-child(4),
+.hs tr:nth-child(6)>td:nth-child(7),
+.hs tr:nth-child(6)>td:nth-child(8) {
+    background-color: #d4d7e8;
+}
+.hs tr:nth-child(5)>td:nth-child(2){
+    background-color: #bcd7e8;
+}
+.hs tr:nth-child(6)>td:nth-child(2),
+.hs tr:nth-child(6)>td:nth-child(4),
+.hs tr:nth-child(6)>td:nth-child(6){
+    background-color: #a5ddea;
+}
+.hs tr:nth-child(8)>td:nth-child(2), 
+.hs tr:nth-child(8)>td:nth-child(4){
+    background-color: #98dbe3;
+}
+.hs tr:nth-child(6)>td:nth-child(5),
+.hs tr:nth-child(6)>td:nth-child(3){
+    background-color: #a2dedf;
+}
+.hs tr:nth-child(7)>td:nth-child(2){
+    background-color: #9ddad5;
+}
+.hs tr:nth-child(5)>td:nth-child(3),
+.hs tr:nth-child(5)>td:nth-child(4){
+    background: linear-gradient( to  bottom, #bcd7e8, #aab1db);
+}
+.hs tr:nth-child(8)>td:nth-child(3){
+    background: linear-gradient( to bottom, #9ddad5, #b7c3ca);
+}
 /* Formulario de reservas */
 header{
     display: flex;
@@ -43,6 +89,7 @@ header{
 
 h1{
     color: beige;
+    
 }
 
 h5{
